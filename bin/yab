@@ -15,7 +15,7 @@ info() {
 }
 
 warn() {
-    echo -e "$(date '+%H:%M:%S') ${YELLOW}==> $1${NC}
+    echo -e "$(date '+%H:%M:%S') ${YELLOW}==> $1${NC}"
 }
 
 error() {
@@ -45,8 +45,7 @@ fi
 
 # Check for file argument
 if [ -z "$1" ]; then
-    error "Error: No package list file provided."
-    show_help
+    error "Error: No package list file provided, check 'yab -h'!"
     exit 1
 fi
 
