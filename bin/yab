@@ -20,7 +20,6 @@ warn() {
 
 error() {
     echo -e "$(date '+%H:%M:%S') ${RED}==> $1${NC}" >&2
-    log "[ERROR] $1"
 }
 
 # Help function
